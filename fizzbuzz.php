@@ -2,12 +2,10 @@
 
 for($i=1;$i<=100;$i++){
 
-if($i%3==0 && $i%5==0){
-  echo "FizzBuzz";
-}elseif($i%3==0){
-  echo "Fizz";
-}elseif($i%5==0){
-  echo "Buzz";
+$j=strval($i);
+
+if($i%3==0 || strpos($i,'3')){
+  echo "Aho";
 }else{
   echo $i;
 }
